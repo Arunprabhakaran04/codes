@@ -25,7 +25,7 @@ public class longest_bitonic_sequence {
         }
         int maxsum = 0;
         for(int i = 0; i<n; i++){
-            maxsum = Math.max(maxsum, lis[i] - lds[i] + 1);
+            maxsum = Math.max(maxsum, lis[i] + lds[i] - 1);
         }
         return maxsum;
 

@@ -19,7 +19,7 @@ public class priorityqueue {
         }
         Node parent = null;
         Node temp = head;
-        while(temp != null && temp.priority < prioirty){
+        while(temp != null && temp.priority >= prioirty){
             parent = temp;
             temp = temp.next;
         }
